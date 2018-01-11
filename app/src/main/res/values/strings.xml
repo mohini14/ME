@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ME</string>
+    <string name="alert_message">Alert</string>
+    <string name="ok_message">OK</string>
+    <string name="empty_field_message">All fields are required</string>
+    <string name="wrong_emailid_message">Email id is not in correct format</string>
+    <string name="wrong_password_message">Password should be of atleast 8 character</string>
+    <string name="create_account">Create account</string>
+    <string name="forgot_password">forgot password?</string>
+</resources>

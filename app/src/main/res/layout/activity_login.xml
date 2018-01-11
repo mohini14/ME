@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPureWhite"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:inputType="textEmailAddress"></EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameWrapper"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"></EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPureWhite"
+            android:textStyle="normal"
+            ></Button>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/layout2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"></Button>
+
+    <Button
+        android:layout_below="@id/layout2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/create_account"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"></Button>
+
+
+
+</RelativeLayout>
