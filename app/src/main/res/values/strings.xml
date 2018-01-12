@@ -7,4 +7,5 @@
     <string name="wrong_password_message">Password should be of atleast 8 character</string>
     <string name="create_account">Create account</string>
     <string name="forgot_password">forgot password?</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
 </resources>
